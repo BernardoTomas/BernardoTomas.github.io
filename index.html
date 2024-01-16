@@ -9,15 +9,33 @@
         body {
             font-family: Nunito, sans-serif;
             font-size: 18px;
+            background-color: #ECE0DE;
         }
 
         h1, h2, h3, h4 {
             font-family: Raleway, sans-serif;
             font-weight: 500;
+            color: #310B38;
         }
 
         h1 {
             font-size: 42px;
+        }
+
+        .Index a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 16px;
+            border-radius: 50px;
+            background-color: #D72520;
+            color: #ECE0DE;
+            border: 3px solid #D72520;
+        }
+
+        .Index a:hover {
+            transition-duration: 0.4s;
+            background-color: #ECE0DE;
+            color: #D72520;
         }
 
     </style>
@@ -28,13 +46,12 @@
     <h1>Bernardo Lourenço Tomás Cançado</h1>
     
     <br><hr><br>
-
-    <h3>Índice</h3>
-    <ul>
-        <li><a href="#sobreMim"><em>Sobre mim -></em></a></li>
-        <li><a href="#Competencias"><em>Principais competências -></em></a></li>
-        <li><a href="#Links"><em>Links variados -></em></a></li>
-    </ul>
+    <div class="Index">
+        <h3>Índice</h3>
+        <a href="#sobreMim">Sobre mim >></a>
+        <a href="#Competencias">Principais competências >></a>
+        <a href="#Links">Links variados >></a>
+    </div>
 
     <img id="pfp" src="Images/pfp.jpeg" alt="Uma foto minha" width="200px">
 
