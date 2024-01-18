@@ -67,8 +67,10 @@ h3 {
 }
 
 .profilePic img {
+    padding: 0px 0px 12px 12px;
+    background-color: rgb(215,37,32, 1);
     border-radius: 100%;
-    box-shadow: 1px 1px 10px rgb(3, 1, 5, 0.5);
+    box-shadow: 8px -8px 0px #EB6A32;
     width: 200px;
 }
 
@@ -105,4 +107,23 @@ h3 {
 
 .competencias li {
     font-size: 20px;
+    list-style: none;
+}
+
+.competencias h2 {
+    margin-bottom: 16px;
+}
+
+.competencias li:nth-of-type(2n-1) {
+    list-style: circle;
+    color: #310B38;
+}
+
+.links h2 {
+    margin-bottom: 16px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #db5921;
 }
