@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    background-color: #ECE0DE;
+    padding: 64px 80px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #310B38;
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+}
+
+h3 {
+    color: #db5921;
+}
+
+.purple {
+    color: #310B38;
+    font-style: italic;
+}
+
+.Index {
+    padding-bottom: 80px;
+}
+
+.Index h2 {
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+
+.Index a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 32px;
+    border-radius: 50px;
+    background-color: #EB6A32;
+    color: #ECE0DE;
+    border: 3px solid #EB6A32;
+    display: inline-block;
+}
+
+.Index a:hover {
+    transition-duration: 0.4s;
+    background-color: #ECE0DE;
+    color: #EB6A32
+}
+
+.profile {
+    align-content: center;
+    height: 217px;
+}
+
+.profilePic {
+    float: left;
+    padding-right: 64px;
+}
+
+.profilePic img {
+    padding: 0px 0px 12px 12px;
+    background-color: rgb(215,37,32, 1);
+    border-radius: 100%;
+    box-shadow: 8px -8px 0px #EB6A32;
+    width: 200px;
+}
+
+.profileText {
+    float: left;
+    width: 70%;
+    padding-top: 32px;
+}
+
+.profileText h2 {
+    margin-bottom: 16px;
+}
+
+.divider {
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(235, 106, 50, 0.2), rgb(235, 106, 50, 0.5), rgb(215,37,32, 0.8), rgb(215,37,32, 1), rgb(215,37,32, 0.8), rgb(235, 106, 50, 0.5), rgb(235, 106, 50, 0.2));
+    clear: both;
+    width: 100%;
+    margin: 56px 0;
+}
+
+.habilidades-transferiveis {
+    margin-bottom: 64px;
+}
+
+.habilidades-transferiveis h3 {
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.skill-box {
+    margin: 24px 0;
+}
+
+.competencias li {
+    font-size: 20px;
+    list-style: none;
+}
+
+.competencias h2 {
+    margin-bottom: 16px;
+}
+
+.competencias li:nth-of-type(2n-1) {
+    list-style: circle;
+    color: #310B38;
+}
+
+.links h2 {
+    margin-bottom: 16px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #db5921;
+}
