@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: portfolio_app
+    build: ./app
+    environment:
+      NODE_ENV: production
+    ports:
+      - 5173:5173
+    volumes:
+      - ./app/src:/app/src
