@@ -1,0 +1,13 @@
+.dark {
+  color: rgb(221, 221, 221);
+  background-color: rgb(29, 29, 29);
+}
+
+.light {
+  background-color: rgb(221, 221, 221);
+  color: rgb(29, 29, 29);
+}
+
+button {
+  transition-duration: 500ms;
+}
