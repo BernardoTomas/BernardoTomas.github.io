@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../context/toggle-theme";
+import { ThemeContext } from "../../context/toggle-theme";
 
 function NameCard () {
   const { theme } = useContext(ThemeContext);

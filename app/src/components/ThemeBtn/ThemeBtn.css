@@ -1,0 +1,17 @@
+.theme-btn {
+  border-radius: 50px;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.theme-btn.dark {
+  color: rgb(221, 221, 221);
+  background-color: rgb(29, 29, 29);
+}
+
+.theme-btn.light {
+  background-color: rgb(221, 221, 221);
+  color: rgb(29, 29, 29);
+}
