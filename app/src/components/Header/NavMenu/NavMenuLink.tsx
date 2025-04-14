@@ -1,4 +1,4 @@
-import { ThemeContext } from "../../context/toggle-theme";
+import { ThemeContext } from "../../../context/toggle-theme";
 import "./NavMenu.css";
 import { useContext } from "react";
 

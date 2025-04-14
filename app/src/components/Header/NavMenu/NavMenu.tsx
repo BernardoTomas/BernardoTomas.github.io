@@ -1,4 +1,4 @@
-import ThemeBtn from "../ThemeBtn/ThemeBtn";
+import ThemeBtn from "./ThemeBtn/ThemeBtn";
 import NavMenuLink from "./NavMenuLink";
 import './NavMenu.css';
 
