@@ -1,7 +1,27 @@
+@import '../../variables.css';
+
 header {
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid rgb(75, 75, 75);
   margin: 0 auto;
+}
+
+.header-logo-box {
+  margin: 0;
+  padding: 0;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-logo.light {
+  color: var(--primary-color);
+}
+
+.header-logo.dark {
+  color: var(--secondary-color);
 }

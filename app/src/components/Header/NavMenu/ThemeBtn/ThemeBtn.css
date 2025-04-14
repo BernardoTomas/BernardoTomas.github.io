@@ -1,3 +1,5 @@
+@import '../../../../variables.css';
+
 .theme-btn {
   border-radius: 50px;
   line-height: 1rem;
@@ -7,11 +9,11 @@
 }
 
 .theme-btn.dark {
-  color: rgb(221, 221, 221);
-  background-color: rgb(29, 29, 29);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .theme-btn.light {
-  background-color: rgb(221, 221, 221);
-  color: rgb(29, 29, 29);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }

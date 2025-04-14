@@ -1,11 +1,11 @@
 import NavMenu from './NavMenu/NavMenu';
 import './Header.css';
+import HeaderLogo from './HeaderLogo';
 
 function Header () {
   return (
     <header>
-      <link rel='icon' href='%PUBLIC_URL%/BLT-logo.svg' />
-      {/* <Logo /> */}
+      <HeaderLogo />
       <NavMenu />
     </header>
   )
