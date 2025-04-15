@@ -3,8 +3,7 @@ import { useContext } from 'react';
 import './Header.css';
 
 function HeaderLogo () {
-  const {theme} = useContext(ThemeContext
-  )
+  const {theme} = useContext(ThemeContext);
 
   return (
     <div className="header-logo-box">

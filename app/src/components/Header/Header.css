@@ -9,6 +9,14 @@ header {
   margin: 0 auto;
 }
 
+header.light {
+  background-color: var(--secondary-color);
+}
+
+header.dark {
+  background-color: var(--primary-color);
+}
+
 .header-logo-box {
   margin: 0;
   padding: 0;
@@ -19,9 +27,11 @@ header {
 }
 
 .header-logo.light {
+  fill: var(--primary-color);
   color: var(--primary-color);
 }
 
 .header-logo.dark {
+  fill: var(--secondary-color);
   color: var(--secondary-color);
 }

@@ -15,7 +15,7 @@ function NavMenuLink (props: NavMenuPropsType) {
 
   return (
     <li>
-      <a href={anchor} className={theme + "nav-menu-item"}>
+      <a href={anchor} className={theme + " nav-menu-item"}>
         {name}
       </a>
     </li>
