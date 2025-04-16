@@ -9,7 +9,7 @@ function TextCard () {
   return (
     <div className={ theme + ' text-card-container' }>
       <h1>BERNARDO TOMAS</h1>
-      <h3>Lorem ipsum dolor sit amet</h3>
+      <h3>Full Stack Web Developer and Designer</h3>
       <button className="hero-cta-btn">Venha ver meus projetos</button>
     </div>
   );

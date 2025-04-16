@@ -1,0 +1,33 @@
+#vector-hair {
+  filter: var(--purple-drop-filter);
+} 
+
+#vector-skin {
+  filter: var(--blue-drop-filter);
+}
+
+#vector-shirt {
+  filter: var(--purple-drop-filter);
+}
+
+#vector-headphone-color-1 {
+  filter: var(--yellow-drop-filter);
+}
+
+#vector-headphone-color-2 {
+  filter: var(--yellow-drop-filter);
+}
+
+.vector-line {
+  stroke: white;
+  display: inline;
+  opacity: 1;
+  fill: none;
+  stroke-width: 4;
+  stroke-width: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 57.5;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+  paint-order: stroke markers fill;
+}

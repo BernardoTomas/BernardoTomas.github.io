@@ -1,4 +1,19 @@
 :root {
   --primary-color: rgb(29, 29, 29);
   --secondary-color: rgb(221, 221, 221);
+
+  --blue-drop-filter:
+    drop-shadow(0px 0px 35px rgb(14, 39, 151))
+    drop-shadow(0px 0px 15px rgb(65, 92, 216))
+    drop-shadow(0px 0px 5px rgb(141, 162, 255));
+
+  --purple-drop-filter:
+    drop-shadow(0px 0px 35px rgb(60, 14, 104)) 
+    drop-shadow(0px 0px 15px rgb(113, 39, 182)) 
+    drop-shadow(0px 0px 5px rgb(173, 97, 243));
+
+  --yellow-drop-filter:
+    drop-shadow(0px 0px 20px rgb(105, 105, 1)) 
+    drop-shadow(0px 0px 8px rgb(197, 197, 41)) 
+    drop-shadow(0px 0px 5px rgb(255, 255, 120));
 }

@@ -3,3 +3,14 @@
   height: 400px;
   background-color: blueviolet;
 }
+
+#svg2 {
+  margin-right: -500px;
+  position: relative;
+  z-index: 100;
+}
+
+#svg1 {
+  position: relative;
+  z-index: 10;
+}
