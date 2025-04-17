@@ -1,3 +1,24 @@
+@keyframes flicker1 {
+  0% { filter: var(--yellow-drop-filter); }
+  0.5% { filter: none; }
+  1% { filter: var(--yellow-drop-filter); }
+  2% { filter: none; }
+  3% { filter: none; }
+  4% { filter: var(--yellow-drop-filter) }
+  100% { filter: var(--yellow-drop-filter) }
+}
+
+@keyframes flicker2 {
+  0% { filter: var(--yellow-drop-filter); }
+  2% { filter: var(--yellow-drop-filter); }
+  2.5% { filter: none; }
+  3% { filter: var(--yellow-drop-filter); }
+  4% { filter: none; }
+  5% { filter: none; }
+  6% { filter: var(--yellow-drop-filter) }
+  100% { filter: var(--yellow-drop-filter) }
+}
+
 #vector-hair {
   filter: var(--purple-drop-filter);
 } 
@@ -12,10 +33,16 @@
 
 #vector-headphone-color-1 {
   filter: var(--yellow-drop-filter);
+  animation-name: flicker1;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
 }
 
 #vector-headphone-color-2 {
   filter: var(--yellow-drop-filter);
+  animation-name: flicker2;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
 }
 
 .vector-line {

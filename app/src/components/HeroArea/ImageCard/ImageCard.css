@@ -1,7 +1,30 @@
-.image-placeholder {
-  width: 300px;
-  height: 400px;
-  background-color: blueviolet;
+@keyframes border-flicker {
+  0% { background-image: var(--profile-border-gradient-high-yellow); }
+  0.5% { background-image: var(--profile-border-gradient-low-yellow); }
+  1% { background-image: var(--profile-border-gradient-high-yellow); }
+  2% { background-image: var(--profile-border-gradient-low-yellow); }
+  2.5% { background-image: var(--profile-border-gradient-no-yellow); }
+  3% { background-image: var(--profile-border-gradient-low-yellow); }
+  4% { background-image: var(--profile-border-gradient-low-yellow); }
+  5% { background-image: var(--profile-border-gradient-low-yellow); }
+  6% { background-image: var(--profile-border-gradient-high-yellow); }
+  100% { background-image: var(--profile-border-gradient-high-yellow); }
+}
+
+.profile-bg-outline {
+  padding: 4px 4px 4px 0;
+  border-radius: 0 500px 500px 0;
+  animation-name: border-flicker;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+}
+
+.image-card-container {
+  border-radius: 0 500px 500px 0;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    rgb(12, 12, 12));
 }
 
 #svg2 {

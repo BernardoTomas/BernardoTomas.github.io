@@ -2,6 +2,10 @@
   --primary-color: rgb(29, 29, 29);
   --secondary-color: rgb(221, 221, 221);
 
+  --mid-purple: rgb(113, 39, 182);
+  --mid-blue: rgb(65, 92, 216);
+  --mid-yellow: rgb(255, 255, 99);
+
   --blue-drop-filter:
     drop-shadow(0px 0px 35px rgb(14, 39, 151))
     drop-shadow(0px 0px 15px rgb(65, 92, 216))
@@ -16,4 +20,58 @@
     drop-shadow(0px 0px 20px rgb(105, 105, 1)) 
     drop-shadow(0px 0px 8px rgb(197, 197, 41)) 
     drop-shadow(0px 0px 5px rgb(255, 255, 120));
+
+    --profile-border-gradient-high-yellow: 
+    linear-gradient(
+      to right,
+      var(--primary-color),
+      rgba(0,0,0,0),
+      rgba(0,0,0,0)
+    ),
+    radial-gradient(
+      farthest-side at 500px 200px,
+      var(--mid-blue) 0%,
+      rgba(0,0,0,0) 50%
+    ),
+    radial-gradient(
+      farthest-corner at 200px 40px,
+      var(--mid-yellow) 0%,
+      var(--mid-purple) 30%
+    );
+
+    --profile-border-gradient-low-yellow: 
+    linear-gradient(
+      to right,
+      var(--primary-color),
+      rgba(0,0,0,0),
+      rgba(0,0,0,0)
+    ),
+    radial-gradient(
+      farthest-side at 500px 200px,
+      var(--mid-blue) 0%,
+      rgba(0,0,0,0) 50%
+    ),
+    radial-gradient(
+      farthest-corner at 200px 40px,
+      var(--mid-yellow) 0%,
+      var(--mid-purple) 15%
+    );
+
+    --profile-border-gradient-no-yellow: 
+    linear-gradient(
+      to right,
+      var(--primary-color),
+      rgba(0,0,0,0),
+      rgba(0,0,0,0)
+    ),
+    radial-gradient(
+      farthest-side at 500px 200px,
+      var(--mid-blue) 0%,
+      rgba(0,0,0,0) 50%
+    ),
+    radial-gradient(
+      farthest-corner at 200px 40px,
+      var(--mid-yellow) 0%,
+      var(--mid-purple) 5%
+    );
 }
