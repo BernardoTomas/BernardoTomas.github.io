@@ -3,8 +3,10 @@
   --secondary-color: rgb(221, 221, 221);
 
   --mid-purple: rgb(113, 39, 182);
-  --mid-blue: rgb(65, 92, 216);
+  --mid-blue: rgb(89, 118, 250);
   --mid-yellow: rgb(255, 255, 99);
+
+  --almost-black: rgb(12, 12, 12);
 
   --blue-drop-filter:
     drop-shadow(0px 0px 35px rgb(14, 39, 151))

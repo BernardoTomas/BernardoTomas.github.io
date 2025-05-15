@@ -1,7 +1,47 @@
-.hero-container {
+/* .hero-container {
+  margin-bottom: -320px;
+} */
+
+.hero-content {
   display: flex;
   flex-direction: row;
   padding: 80px 0;
   justify-content: space-evenly;
-  background-color: var(--primary-color);
+  background-color: var(--almost-black);
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.hero-overlay {
+  position: absolute;
+  z-index: 100;
+  left: -320px;
+  top: 320px;
+  height: 100%;
+  width: 100%;
+}
+
+.smoke-container {
+  background: radial-gradient(rgba(60, 14, 104, 0.5), rgba(0, 0, 0, 0) 60%);
+  -webkit-mask-image: url("../../assets/smoke_overlay_bottom.png"); /* Use the smoke image as a mask */
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("../../assets/smoke_overlay_bottom.png");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: relative;
+  border: 1px solid red;
+  height: fit-content;
+  width: fit-content;
+}
+
+.smoke2 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+.smoke1, .smoke2 {
+  opacity: 0.0;
+  mix-blend-mode: screen;
 }
