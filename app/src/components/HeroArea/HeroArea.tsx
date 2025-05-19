@@ -14,17 +14,19 @@ function HeroArea() {
         <TextCard />
       </div>
       <div className="hero-overlay">
-        <div className="smoke-container">
+        <div className="smoke-container-purple">
           <img
             className="smoke1"
             src={smokeOverlayBottom}
             alt="smoke effect overlay"
           />
-          <img
-            className="smoke2"
-            src={smokeOverlayBottom}
-            alt="smoke effect overlay"
-          />
+          <div className="smoke-container-yellow">
+            <img
+              className="smoke2"
+              src={smokeOverlayBottom}
+              alt="smoke effect overlay"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -23,57 +23,57 @@
     drop-shadow(0px 0px 8px rgb(197, 197, 41)) 
     drop-shadow(0px 0px 5px rgb(255, 255, 120));
 
-    --profile-border-gradient-high-yellow: 
-    linear-gradient(
-      to right,
-      var(--primary-color),
-      rgba(0,0,0,0),
-      rgba(0,0,0,0)
-    ),
-    radial-gradient(
-      farthest-side at 500px 200px,
-      var(--mid-blue) 0%,
-      rgba(0,0,0,0) 50%
-    ),
-    radial-gradient(
-      farthest-corner at 200px 40px,
-      var(--mid-yellow) 0%,
-      var(--mid-purple) 30%
-    );
+  --profile-border-gradient-high-yellow: 
+  linear-gradient(
+    to right,
+    var(--primary-color),
+    rgba(0,0,0,0),
+    rgba(0,0,0,0)
+  ),
+  radial-gradient(
+    farthest-side at 500px 200px,
+    var(--mid-blue) 0%,
+    rgba(0,0,0,0) 50%
+  ),
+  radial-gradient(
+    farthest-corner at 200px 40px,
+    var(--mid-yellow) 0%,
+    var(--mid-purple) 30%
+  );
 
-    --profile-border-gradient-low-yellow: 
-    linear-gradient(
-      to right,
-      var(--primary-color),
-      rgba(0,0,0,0),
-      rgba(0,0,0,0)
-    ),
-    radial-gradient(
-      farthest-side at 500px 200px,
-      var(--mid-blue) 0%,
-      rgba(0,0,0,0) 50%
-    ),
-    radial-gradient(
-      farthest-corner at 200px 40px,
-      var(--mid-yellow) 0%,
-      var(--mid-purple) 15%
-    );
+  --profile-border-gradient-low-yellow: 
+  linear-gradient(
+    to right,
+    var(--primary-color),
+    rgba(0,0,0,0),
+    rgba(0,0,0,0)
+  ),
+  radial-gradient(
+    farthest-side at 500px 200px,
+    var(--mid-blue) 0%,
+    rgba(0,0,0,0) 50%
+  ),
+  radial-gradient(
+    farthest-corner at 200px 40px,
+    var(--mid-yellow) 0%,
+    var(--mid-purple) 15%
+  );
 
-    --profile-border-gradient-no-yellow: 
-    linear-gradient(
-      to right,
-      var(--primary-color),
-      rgba(0,0,0,0),
-      rgba(0,0,0,0)
-    ),
-    radial-gradient(
-      farthest-side at 500px 200px,
-      var(--mid-blue) 0%,
-      rgba(0,0,0,0) 50%
-    ),
-    radial-gradient(
-      farthest-corner at 200px 40px,
-      var(--mid-yellow) 0%,
-      var(--mid-purple) 5%
-    );
+  --profile-border-gradient-no-yellow: 
+  linear-gradient(
+    to right,
+    var(--primary-color),
+    rgba(0,0,0,0),
+    rgba(0,0,0,0)
+  ),
+  radial-gradient(
+    farthest-side at 500px 200px,
+    var(--mid-blue) 0%,
+    rgba(0,0,0,0) 50%
+  ),
+  radial-gradient(
+    farthest-corner at 200px 40px,
+    var(--mid-yellow) 0%,
+    var(--mid-purple) 5%
+  );
 }
