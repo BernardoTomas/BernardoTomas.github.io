@@ -1,35 +1,3 @@
-@keyframes purpleSmokeBillow {
-  0% {
-    transform: translate(0, 0) scale(1);
-    filter: blur(0px);
-    opacity: 0.1;
-  }
-  25% {
-    transform: translate(16px, 8px) scale(1.01);
-    filter: blur(0px);
-    opacity: 0.5;
-  }
-  50% {
-    transform: translate(32px, 0) scale(1.02);
-    filter: blur(0px);
-    opacity: 1;
-  }
-  75% {
-    transform: translate(24px, -8px) scale(1.03);
-    filter: blur(0px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translate(16px, -16px) scale(1.04);
-    filter: blur(0px);
-    opacity: 0;
-  }
-}
-
-/* .hero-container {
-
-} */
-
 .hero-content {
   display: flex;
   flex-direction: row;
@@ -47,45 +15,5 @@
   top: 320px;
   height: 100%;
   width: 100%;
-  /* mix-blend-mode: screen; */
-}
-
-
-/* smoke containers provide the mask, smoke1 and smoke2 give size, extra dynamicism, and contrast to smoke effect */
-
-.smoke-container-purple {
-  background: radial-gradient(rgba(60, 14, 104, 0.7), rgba(0, 0, 0, 0) 70%);
-  -webkit-mask-image: url("../../assets/smoke_overlay_bottom.png");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-image: url("../../assets/smoke_overlay_bottom.png");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  position: relative;
-  height: fit-content;
-  width: fit-content;
-  animation: purpleSmokeBillow 8s linear infinite;
-}
-
-.smoke-container-yellow {
-  background: radial-gradient(rgba(255, 251, 10, 0.7), rgba(0, 0, 0, 0) 60%);
-  -webkit-mask-image: url("../../assets/smoke_overlay_bottom.png");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-image: url("../../assets/smoke_overlay_bottom.png");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(20%, -25%);
-}
-
-.smoke1 {
-  opacity: 0.1;
-  transform: translate(-20%, -20%);
-}
-
-.smoke2 {
-  opacity: 0.1;
+  mix-blend-mode: screen;
 }
