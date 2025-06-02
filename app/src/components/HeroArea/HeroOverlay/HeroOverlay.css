@@ -9,47 +9,47 @@
     filter: blur(8px);
     opacity: 0.2;
   }
-  25% {
+  15% {
     transform: translate(40px, 4px) scale(1.08);
     filter: blur(0px);
     opacity: 0.4;
   }
-  35% {
+  20% {
     transform: translate(56px, 0px) scale(1.12);
     filter: blur(8px);
     opacity: 0.6;
   }
-  45% {
+  25% {
     transform: translate(68px, -8px) scale(1.16);
     filter: blur(16px);
     opacity: 0.8;
   }
-  55% {
+  30% {
     transform: translate(76px, -24px) scale(1.2);
     filter: blur(24px);
     opacity: 0.9;
   }
-  65% {
+  40% {
     transform: translate(68px, -36px) scale(1.18);
     filter: blur(32px);
     opacity: 1;
   }
-  70% {
+  50% {
     transform: translate(64px, -44px) scale(1.16);
     filter: blur(40px);
     opacity: 1;
   }
-  75% {
+  60% {
     transform: translate(48px, -48px) scale(1.14);
     filter: blur(32px);
     opacity: 0.8;
   }
-  80% {
+  70% {
     transform: translate(40px, -44px)scale(1.1);
     filter: blur(24px);
     opacity: 0.6;
   }
-  85% {
+  80% {
     transform: translate(32px, -36px) scale(1.06);
     filter: blur(16px);
     opacity: 0.4;
@@ -78,8 +78,8 @@
 }
 
 .smoke-container-purple {
-  opacity: 1;
-  background: radial-gradient(rgba(60, 14, 104, 0.7), rgba(0, 0, 0, 0) 70%);
+  opacity: 0;
+  background: radial-gradient(rgba(60, 14, 104, 0.3), rgba(0, 0, 0, 0) 70%);
   -webkit-mask-image: url("../../../assets/smoke_overlay_bottom.png");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -92,7 +92,7 @@
 }
 
 .smoke-container-yellow {
-  background: radial-gradient(rgba(255, 251, 10, 0.7), rgba(0, 0, 0, 0) 60%);
+  background: radial-gradient(rgba(255, 251, 10, 0.3), rgba(0, 0, 0, 0) 60%);
   -webkit-mask-image: url("../../../assets/smoke_overlay_bottom.png");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
