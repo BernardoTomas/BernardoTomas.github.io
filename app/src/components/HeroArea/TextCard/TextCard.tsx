@@ -1,5 +1,8 @@
 import { ThemeContext } from "../../../context/toggle-theme";
 import { useContext } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import StacksLine from "./StacksLine";
+import Button from "../../Buttons/Buttons";
 
 import react_logo from "../../../assets/react.png";
 import docker_logo from "../../../assets/docker.png";
@@ -19,60 +22,33 @@ import "./Textcard.css";
 function TextCard() {
   const { theme } = useContext(ThemeContext);
 
+  const favStacks = [
+    [sql_logo, react_logo, docker_logo, node_logo, git_logo],
+    [html_logo, css_logo, javascript_logo, python_logo],
+    [typescript_logo, jest_logo, wordpress_logo],
+  ];
+
   return (
     <div className={theme + " text-card-container"}>
-      <h1>
-        BERNARDO <span className="purple-text">TOMAS</span>
-      </h1>
-      <h3>
-        Full Stack Web <span className="purple-text">Developer</span> and{" "}
-        <span className="purple-text">Designer</span>
-      </h3>
-      <button className="hero-cta-btn">Get to know my work</button>
-      {/* VVV Modularize this VVV */}
+      <div className="text-and-btns-box">
+        <h1>
+          BERNARDO <span className="purple-text">TOMAS</span>
+        </h1>
+        <h3>
+          Full Stack Web <span className="purple-text">Developer</span> and{" "}
+          <span className="purple-text">Designer</span>
+        </h3>
+        <div className="hero-btns-container">
+          <Button btnContent="Check out my work" btnStyle="btn-1-blue" />
+          <Button btnContent={FaGithub} btnStyle="btn-1-purple" />
+          <Button btnContent={FaLinkedin} btnStyle="btn-1-purple" />
+        </div>
+      </div>
+
       <div className="favorite-stacks-container">
-        <div className="stacks-line">
-          <div className="stack-logo">
-            <img src={sql_logo} alt="SQL" />
-          </div>
-          <div className="stack-logo">
-            <img src={react_logo} alt="React" />
-          </div>
-          <div className="stack-logo">
-            <img src={docker_logo} alt="Docker" />
-          </div>
-          <div className="stack-logo">
-            <img src={node_logo} alt="Nodejs" />
-          </div>
-          <div className="stack-logo">
-            <img src={git_logo} alt="Nodejs" />
-          </div>
-        </div>
-        <div className="stacks-line">
-          <div className="stack-logo">
-            <img src={html_logo} alt="HTML" />
-          </div>
-          <div className="stack-logo">
-            <img src={css_logo} alt="CSS" />
-          </div>
-          <div className="stack-logo">
-            <img src={javascript_logo} alt="javascript" />
-          </div>
-          <div className="stack-logo">
-            <img src={python_logo} alt="python" />
-          </div>
-        </div>
-        <div className="stacks-line">
-          <div className="stack-logo">
-            <img src={typescript_logo} alt="Typescript" />
-          </div>
-          <div className="stack-logo">
-            <img src={jest_logo} alt="Jest" />
-          </div>
-          <div className="stack-logo">
-            <img src={wordpress_logo} alt="wordpress" />
-          </div>
-        </div>
+        {favStacks.map((line, index) => (
+          <StacksLine stacks={line} key={index} />
+        ))}
       </div>
     </div>
   );
