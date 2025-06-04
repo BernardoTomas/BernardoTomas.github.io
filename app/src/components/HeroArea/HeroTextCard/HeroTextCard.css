@@ -10,6 +10,10 @@
   padding-right: 64px;
 }
 
+.text-and-btns-box h1, .text-and-btns-box h3 {
+  color: white;
+}
+
 .hero-btns-container {
   display: flex;
   flex-direction: row;

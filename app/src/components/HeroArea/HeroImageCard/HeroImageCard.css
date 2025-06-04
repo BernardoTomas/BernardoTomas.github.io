@@ -1,16 +1,3 @@
-@keyframes border-flicker {
-  0% { background-image: var(--profile-border-gradient-high-yellow); }
-  0.5% { background-image: var(--profile-border-gradient-low-yellow); }
-  1% { background-image: var(--profile-border-gradient-high-yellow); }
-  2% { background-image: var(--profile-border-gradient-low-yellow); }
-  2.5% { background-image: var(--profile-border-gradient-no-yellow); }
-  3% { background-image: var(--profile-border-gradient-low-yellow); }
-  4% { background-image: var(--profile-border-gradient-low-yellow); }
-  5% { background-image: var(--profile-border-gradient-low-yellow); }
-  6% { background-image: var(--profile-border-gradient-high-yellow); }
-  100% { background-image: var(--profile-border-gradient-high-yellow); }
-}
-
 #svg2 {
   margin-right: -500px;
   position: relative;

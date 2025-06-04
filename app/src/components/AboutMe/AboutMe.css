@@ -1,0 +1,14 @@
+.about-me-wrapper {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  padding: 64px;
+  margin: 0 auto;
+  gap: 40px;
+}

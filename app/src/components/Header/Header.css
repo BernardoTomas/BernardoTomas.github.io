@@ -1,22 +1,17 @@
 @import '../../variables.css';
 
 header {
+  box-sizing: border-box;
   position: sticky;
-  padding: 16px 24px;
+  padding: 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid rgb(75, 75, 75);
   margin: 0 auto;
   top: 0px;
+  width: 100%;
   z-index: 10000000;
-}
-
-header.light {
-  background-color: var(--secondary-color);
-}
-
-header.dark {
   background-color: var(--primary-color);
 }
 
@@ -27,14 +22,6 @@ header.dark {
 
 .header-logo {
   display: block;
-}
-
-.header-logo.light {
-  fill: var(--primary-color);
-  color: var(--primary-color);
-}
-
-.header-logo.dark {
   fill: var(--secondary-color);
   color: var(--secondary-color);
 }

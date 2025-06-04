@@ -18,22 +18,9 @@
 .nav-menu-separator {
   width: 1px;
   height: 24px;
-}
-
-/* --------- Color scheme classes --------- */
-
-.nav-menu-separator.light {
-  background: linear-gradient(var(--secondary-color), var(--primary-color), var(--secondary-color));
-}
-
-.nav-menu-separator.dark {
   background: linear-gradient(var(--primary-color), var(--secondary-color), var(--primary-color));
 }
 
-.nav-menu-item.light {
-  color: var(--primary-color);
-}
-
-.nav-menu-item.dark {
+.nav-menu-item {
   color: var(--secondary-color);
 }
