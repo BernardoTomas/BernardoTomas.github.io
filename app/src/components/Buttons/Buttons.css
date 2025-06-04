@@ -1,3 +1,26 @@
+button {
+  --default-btn-color: white;
+  --default-btn-bg-color: var(--almost-black);
+  --secondary-btn-color: gray;
+  --hover-btn-border-color: white;
+  --offwhite-blue: rgb(216, 224, 255);
+  --offwhite-purple: rgb(230, 214, 252);
+  --hover-btn-color: white;
+
+  --btn-gradient-color-1: rgb(196, 207, 255);
+  --btn-gradient-color-2: rgb(52, 129, 192);
+  --btn-gradient-color-3: rgb(18, 81, 133);
+
+  border: 1px solid var(--default-btn-color);
+  color: var(--default-btn-color);
+  border-radius: 8px;
+  padding: 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
 
 button.btn-1-purple,
 button.btn-1-blue {
@@ -40,23 +63,20 @@ button.btn-1-purple:hover>* {
     drop-shadow(0 0 1px var(--btn-gradient-color-2));
 }
 
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 .btn-1-blue {
   --default-btn-color: var(--mid-blue);
   --secondary-btn-color: var(--light-blue);
   --hover-btn-border-color: var(--offwhite-blue);
   --hover-btn-color: var(--offwhite-blue);
-
-  border: 1px solid var(--mid-blue);
-  color: var(--mid-blue);
 }
 
 .btn-1-purple {
-  --default-btn-color: var(--mid-purple);
+  --default-btn-color: var(--light-purple);
   --secondary-btn-color: var(--light-purple);
   --hover-btn-border-color: var(--offwhite-purple);
   --hover-btn-color: var(--offwhite-purple);
@@ -64,9 +84,6 @@ button:focus-visible {
   --btn-gradient-color-1: rgb(227, 196, 255);
   --btn-gradient-color-2: rgb(113, 52, 192);
   --btn-gradient-color-3: rgb(58, 18, 133);
-
-  border: 1px solid var(--mid-purple);
-  color: var(--light-purple);
 }
 
 .btn-3 {
@@ -86,5 +103,5 @@ button:focus-visible {
 button>h4 {
   font-weight: 500;
   margin: 0;
-  padding: 0 2.5em;
+  padding: 0.4em 2.5em;
 }

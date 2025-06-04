@@ -17,9 +17,9 @@ import sql_logo from "../../../assets/sql.png";
 import python_logo from "../../../assets/python.png";
 import wordpress_logo from "../../../assets/wordpress.png";
 
-import "./Textcard.css";
+import "./HeroTextCard.css";
 
-function TextCard() {
+function HeroTextCard() {
   const { theme } = useContext(ThemeContext);
 
   const favStacks = [
@@ -39,9 +39,21 @@ function TextCard() {
           <span className="purple-text">Designer</span>
         </h3>
         <div className="hero-btns-container">
-          <Button btnContent="Check out my work" btnStyle="btn-1-blue" />
-          <Button btnContent={FaGithub} btnStyle="btn-1-purple" />
-          <Button btnContent={FaLinkedin} btnStyle="btn-1-purple" />
+          <Button
+            btnLink="https://www.google.com"
+            btnContent="Check out my work"
+            btnStyle="btn-1-blue"
+          />
+          <Button
+            btnLink="https://github.com/BernardoTomas"
+            btnContent={FaGithub}
+            btnStyle="btn-1-purple"
+          />
+          <Button
+            btnLink="https://www.linkedin.com/in/bernardocan%C3%A7ado/"
+            btnContent={FaLinkedin}
+            btnStyle="btn-1-purple"
+          />
         </div>
       </div>
 
@@ -54,4 +66,4 @@ function TextCard() {
   );
 }
 
-export default TextCard;
+export default HeroTextCard;

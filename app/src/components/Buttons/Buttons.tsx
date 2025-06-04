@@ -4,18 +4,26 @@ import { ThemeContext } from "../../context/toggle-theme";
 import { useContext } from "react";
 import "./Buttons.css";
 
-function Button(props: { btnContent: string | IconType; btnStyle: string }) {
-  const { btnContent, btnStyle } = props;
+function Button(props: {
+  btnLink: string;
+  btnContent: string | IconType;
+  btnStyle: string;
+}) {
+  const { btnContent, btnStyle, btnLink } = props;
   const { theme } = useContext(ThemeContext);
 
-  return typeof btnContent === "string" ? (
-    <button className={btnStyle + " " + theme}>
-      <h4>{btnContent}</h4>
-    </button>
-  ) : (
-    <button className={btnStyle + " icon-btn " + theme}>
-      {React.createElement(btnContent)}
-    </button>
+  return (
+    <a href={btnLink} target="_blank">
+      {typeof btnContent === "string" ? (
+        <button className={btnStyle + " " + theme}>
+          <h4>{btnContent}</h4>
+        </button>
+      ) : (
+        <button className={btnStyle + " icon-btn " + theme}>
+          {React.createElement(btnContent)}
+        </button>
+      )}
+    </a>
   );
 }
 

@@ -23,29 +23,6 @@ a {
   color: light-dark(black, white);
 }
 
-button {
-  --default-btn-color: white;
-  --default-btn-bg-color: var(--almost-black);
-  --secondary-btn-color: gray;
-  --hover-btn-border-color: white;
-  --offwhite-blue: rgb(216, 224, 255);
-  --offwhite-purple: rgb(230, 214, 252);
-  --hover-btn-color: white;
-
-  --btn-gradient-color-1: rgb(196, 207, 255);
-  --btn-gradient-color-2: rgb(52, 129, 192);
-  --btn-gradient-color-3: rgb(18, 81, 133);
-
-  border: 1px solid white;
-  border-radius: 8px;
-  padding: 0.6em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition-duration: 0.5s;
-}
-
 body {
   margin: 0;
   display: flex;

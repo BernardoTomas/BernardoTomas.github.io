@@ -1,4 +1,4 @@
-import "./Textcard.css";
+import "./HeroTextCard.css";
 
 function StacksLine(props: { stacks: string[] }) {
   const { stacks } = props;

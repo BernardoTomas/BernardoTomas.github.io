@@ -1,10 +1,10 @@
 import { ThemeContext } from "../../../context/toggle-theme";
 import { useContext } from "react";
 
-import "./ImageCard.css";
+import "./HeroImageCard.css";
 import "./VectorProfile.css";
 
-function ImageCard() {
+function HeroImageCard() {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -110,4 +110,4 @@ function ImageCard() {
   );
 }
 
-export default ImageCard;
+export default HeroImageCard;
