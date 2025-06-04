@@ -16,13 +16,22 @@ type TextCardProps = {
 
 function TextCard(props: TextCardProps) {
   const { theme } = useContext(ThemeContext);
-  const { title, subtitle, pText, cardStyle } = props;
+  const {
+    title,
+    subtitle,
+    highlightedText,
+    pText,
+    pTextSecondPart,
+    cardStyle,
+  } = props;
 
   return (
     <div className={cardStyle + " " + theme + " card-container"}>
       {title ? <h2>{title}</h2> : ""}
       {title ? <h3>{subtitle}</h3> : ""}
       {pText ? <p>{pText}</p> : ""}
+      {highlightedText ? <h4>{highlightedText}</h4> : ""}
+      {pTextSecondPart ? <p>{pTextSecondPart}</p> : ""}
     </div>
   );
 }

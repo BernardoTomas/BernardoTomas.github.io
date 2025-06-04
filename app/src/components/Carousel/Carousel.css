@@ -1,0 +1,14 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-image {
+  display: block;
+  height: 300px;
+}
+
+.carousel-btn {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}

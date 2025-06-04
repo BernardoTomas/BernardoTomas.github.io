@@ -1,0 +1,7 @@
+.carousel-image {
+  transition-duration: 500ms;
+}
+
+.image-container p {
+  color: white;
+}

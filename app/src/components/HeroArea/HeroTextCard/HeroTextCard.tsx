@@ -35,7 +35,7 @@ function HeroTextCard() {
           BERNARDO <span className="purple-text">TOMAS</span>
         </h1>
         <h3>
-          Full Stack Web <span className="purple-text">Developer</span> and{" "}
+          Full Stack Web <span className="purple-text">Developer</span> and Web{" "}
           <span className="purple-text">Designer</span>
         </h3>
         <div className="hero-btns-container">
