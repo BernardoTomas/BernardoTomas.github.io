@@ -2,9 +2,11 @@ import { ThemeContext } from "../../context/toggle-theme";
 import { useContext } from "react";
 
 import TextCard from "../GenericCards/TextCard";
+import ImageCard from "../GenericCards/ImageCard";
 
+import pfp from "../../assets/portfolio-pfp-placeholder.jpg";
 import "./AboutMe.css";
-import Carousel from "../Carousel/Carousel";
+// import Carousel from "../Carousel/Carousel";
 
 function AboutMe() {
   const { theme } = useContext(ThemeContext);
@@ -12,12 +14,20 @@ function AboutMe() {
   return (
     <div className={theme + " about-me-wrapper"}>
       <div className={"about-me-container"}>
-        <TextCard
-          title="About Me"
-          pText="I am a passionate Full Stack Web Developer and Designer with a keen interest in creating innovative solutions. My journey in web development has equipped me with a diverse skill set, enabling me to tackle complex challenges and deliver high-quality applications."
-          cardStyle="card-1"
-        />
-        <Carousel />
+        <div className={"about-me-box"}>
+          <TextCard
+            title="Hi! I'm Bernardo,"
+            pText="a full-stack web developer passionate about turning ideas into complete web applications: from front-end to back-end. I have experience building modern interfaces with HTML, CSS, JavaScript and React, and developing robust APIs with Node.js, Express.js and MySQL. I also work with Python, apply best practices such as OOP and SOLID, and organize projects using MSC Architecture and Git. My background in graphic design and paid traffic gives me a broader perspective on the product, always keeping the user experience and end result in mind. I'm a Trybe graduate, fluent in both English and Portuguese, and I work well in team environments using agile methodologies like Scrum. If you're looking for someone who understands both code and product, let's talk!"
+            cardStyle="card-1"
+          />
+          <ImageCard
+            imageUrl={pfp}
+            imageAlt="My Face Pic"
+            imageStyle="profile-image"
+            imageBgStyle="profile-image-bg"
+          />
+        </div>
+        {/* <Carousel /> */}
       </div>
     </div>
   );

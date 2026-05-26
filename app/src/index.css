@@ -21,11 +21,13 @@
 .light {
   --primary-color: rgb(221, 221, 221);
   --secondary-color: rgb(7, 7, 7);
+  --purple: var(--mid-purple);
 }
 
 .dark {
   --primary-color: rgb(7, 7, 7);
   --secondary-color: rgb(221, 221, 221);
+  --purple: var(--light-purple);
 }
 
 a {

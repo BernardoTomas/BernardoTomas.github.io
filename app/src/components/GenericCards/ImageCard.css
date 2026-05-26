@@ -5,3 +5,9 @@
 .image-container p {
   color: white;
 }
+
+.profile-image {
+  width: 304px;
+  border: 2px solid white;
+  border-radius: 800px;
+}

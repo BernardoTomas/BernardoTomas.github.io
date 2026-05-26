@@ -13,8 +13,8 @@ function ImageCard(props: ImageCardProps) {
 
   return (
     <div
-      id={id}
-      className={imageBgStyle ? imageBgStyle : "" + " image-container"}
+      id={id || undefined}
+      className={(imageBgStyle || "") + " image-container"}
     >
       <img className={imageStyle} src={imageUrl} alt={imageAlt} />
     </div>

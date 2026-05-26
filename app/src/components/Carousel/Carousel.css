@@ -9,7 +9,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   transform: rotate(80deg);
-  scroll-snap-type: x proximity;
+  /* scroll-snap-type: x proximity; */
 }
 
 .carousel-container::-webkit-scrollbar {
