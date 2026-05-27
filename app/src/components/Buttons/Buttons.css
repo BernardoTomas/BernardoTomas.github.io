@@ -108,13 +108,21 @@ button>h4 {
 
 /* -------------------------Toggle buttons------------------------- */
 
-.theme-btn {
-  border-radius: 50px;
+.nav-toggle-btn {
   line-height: 1rem;
   font-size: 1.5rem;
   padding: 0.5rem;
-  transition: background-color 300ms ease, color 300ms ease;
   color: var(--secondary-color);
   background-color: var(--primary-color);
+}
+
+.theme-btn {
+  transition: background-color 300ms ease, color 300ms ease;
+  border-radius: 50px;
   border: 1px solid var(--secondary-color);
+}
+
+.hamburger-menu-btn-style {
+  transition: background-color 0ms ease, color 0ms ease;
+  border: none;
 }

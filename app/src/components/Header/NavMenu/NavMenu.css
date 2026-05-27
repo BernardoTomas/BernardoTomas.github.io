@@ -25,3 +25,50 @@
 .nav-menu-item {
   color: var(--secondary-color);
 }
+
+/*------------------------burger nav menu-------------------*/
+
+.hamburger-menu-btn {
+  display: none;
+}
+
+.hamburger-nav-menu {
+  align-items: center;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0;
+  padding: 24px 64px 24px 24px;
+  position: absolute;
+  list-style: none;
+  transition: opacity 300ms ease, visibility 300ms ease, top 300ms ease;
+  right: 0px;
+  top: 40px;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.hamburger-nav-menu.open {
+  opacity: 1;
+  top: 64px;
+  visibility: visible;
+}
+
+.burger-nav-menu-separator {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(to right,var(--primary-color), var(--secondary-color), var(--primary-color));
+}
+
+/*------------------------media queries-------------------*/
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide full menu on mobile */
+  }
+
+  .hamburger-menu-btn {
+    display: block; /* Show hamburger on mobile */
+  }
+}
