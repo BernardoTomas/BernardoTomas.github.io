@@ -15,17 +15,21 @@ function AboutMe() {
     <div className={theme + " about-me-wrapper"}>
       <div className={"about-me-container"}>
         <div className={"about-me-box"}>
-          <TextCard
-            title="Hi! I'm Bernardo,"
-            pText="a full-stack web developer passionate about turning ideas into complete web applications: from front-end to back-end. I have experience building modern interfaces with HTML, CSS, JavaScript and React, and developing robust APIs with Node.js, Express.js and MySQL. I also work with Python, apply best practices such as OOP and SOLID, and organize projects using MSC Architecture and Git. My background in graphic design and paid traffic gives me a broader perspective on the product, always keeping the user experience and end result in mind. I'm a Trybe graduate, fluent in both English and Portuguese, and I work well in team environments using agile methodologies like Scrum. If you're looking for someone who understands both code and product, let's talk!"
-            cardStyle="card-1"
-          />
-          <ImageCard
-            imageUrl={pfp}
-            imageAlt="My Face Pic"
-            imageStyle="profile-image"
-            imageBgStyle="profile-image-bg"
-          />
+          <div className="about-me-text-card-box">
+            <TextCard
+              title="Hi! I'm Bernardo,"
+              pText="a full-stack web developer passionate about turning ideas into complete web applications: from front-end to back-end. I have experience building modern interfaces with HTML, CSS, JavaScript and React, and developing robust APIs with Node.js, Express.js and MySQL. I also work with Python, apply best practices such as OOP and SOLID, and organize projects using MSC Architecture and Git. My background in graphic design and paid traffic gives me a broader perspective on the product, always keeping the user experience and end result in mind. I'm a Trybe graduate, fluent in both English and Portuguese, and I work well in team environments using agile methodologies like Scrum. If you're looking for someone who understands both code and product, let's talk!"
+              cardStyle="card-1"
+            />
+          </div>
+          <div className="about-me-image-card-box">
+            <ImageCard
+              imageUrl={pfp}
+              imageAlt="My Face Pic"
+              imageStyle="profile-image"
+              imageBgStyle="profile-image-bg"
+            />
+          </div>
         </div>
         {/* <Carousel /> */}
       </div>

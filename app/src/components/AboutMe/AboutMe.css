@@ -4,20 +4,36 @@
 }
 
 .about-me-container {
-  display: flex;
   align-items: center;
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px;
 }
 
 .about-me-box {
-  display: flex;
+  align-items: center;
   border: 1px solid white;
   border-radius: 8px;
+  box-shadow: var(--generic-box-shadow);
+  display: flex;
   flex-direction: row;
   gap: 40px;
-  align-items: center;
   padding: 40px;
-  box-shadow: var(--generic-box-shadow);
 }
+
+.about-me-text-card-box {
+  display: flex;
+}
+
+@media (max-width: 904px) {
+  .about-me-box {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .about-me-text-card-box {
+    text-align: center;
+  }
+}
+  
