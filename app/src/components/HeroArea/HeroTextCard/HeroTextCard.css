@@ -12,6 +12,7 @@
 
 .text-and-btns-box h1, .text-and-btns-box h3 {
   color: white;
+  text-align: right;
 }
 
 .hero-btns-container {
@@ -58,4 +59,31 @@
   display: block;
   height: 24px;
   width: 24px;
+}
+
+/* ---------------------------------media queries------------------------------------- */
+
+@media (max-width: 768px) {
+  .text-card-container {
+    align-items: center;
+  }
+  .text-and-btns-box {
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-and-btns-box h1, .text-and-btns-box h3 {
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  .favorite-stacks-container {
+    align-items: center;
+    gap: 72px;
+  }
+
+  .stacks-line {
+    padding: 0 64px;
+  }
 }

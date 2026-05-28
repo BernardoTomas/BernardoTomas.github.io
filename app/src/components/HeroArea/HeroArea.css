@@ -1,6 +1,7 @@
 .hero-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 80px 0;
   justify-content: space-evenly;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../../assets/duotone_polygon_bg_small.png');
