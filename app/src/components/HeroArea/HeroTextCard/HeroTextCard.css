@@ -15,7 +15,7 @@
   text-align: right;
 }
 
-.hero-btns-container {
+.hero-btns-container, .purple-btns-container {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -66,16 +66,24 @@
 @media (max-width: 768px) {
   .text-card-container {
     align-items: center;
+    width: 100vw;
   }
   .text-and-btns-box {
-    padding-right: 0;
     align-items: center;
+    padding-right: 0;
     text-align: center;
+    width: 100vw;
   }
 
   .text-and-btns-box h1, .text-and-btns-box h3 {
     text-align: center;
     padding: 0 24px;
+  }
+
+  .hero-btns-container {
+    justify-content: center;
+    width: 70%;
+    flex-wrap: wrap;
   }
 
   .favorite-stacks-container {

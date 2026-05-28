@@ -1,10 +1,26 @@
-#svg2 {
-  margin-right: -500px;
+.image-card-container {
   position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+#svg2 {
+  position: absolute;
   z-index: 100;
 }
 
 #svg1 {
-  position: relative;
+  position: absolute;
   z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .image-card-container {
+    width: 300px;
+    height: 300px;
+  }
+  .image-card-container svg {
+    width: 300px;
+    height: 300px;
+  }
 }

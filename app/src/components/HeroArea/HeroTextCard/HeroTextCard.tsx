@@ -44,16 +44,18 @@ function HeroTextCard() {
             btnContent="Check out my work"
             btnStyle="btn-1-blue"
           />
-          <Button
-            btnLink="https://github.com/BernardoTomas"
-            btnContent={FaGithub}
-            btnStyle="btn-1-purple"
-          />
-          <Button
-            btnLink="https://www.linkedin.com/in/bernardocan%C3%A7ado/"
-            btnContent={FaLinkedin}
-            btnStyle="btn-1-purple"
-          />
+          <div className="purple-btns-container">
+            <Button
+              btnLink="https://github.com/BernardoTomas"
+              btnContent={FaGithub}
+              btnStyle="btn-1-purple"
+            />
+            <Button
+              btnLink="https://www.linkedin.com/in/bernardocan%C3%A7ado/"
+              btnContent={FaLinkedin}
+              btnStyle="btn-1-purple"
+            />
+          </div>
         </div>
       </div>
 
