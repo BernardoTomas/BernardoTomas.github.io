@@ -13,9 +13,9 @@
 
 .about-me-box {
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid var(--generic-card-border-color);
   border-radius: 8px;
-  box-shadow: var(--generic-box-shadow);
+  box-shadow: var(--card-border-box-shadow), var(--card-border-inset-box-shadow);
   display: flex;
   flex-direction: row;
   gap: 40px;

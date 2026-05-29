@@ -1,0 +1,19 @@
+@import "./variables.css";
+
+.light {
+  --primary-color: rgb(221, 221, 221);
+  --secondary-color: rgb(7, 7, 7);
+  --purple: var(--mid-purple);
+  --card-border-box-shadow: var(--generic-box-shadow);
+  --card-border-inset-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  --generic-card-border-color: rgba(0, 0, 0, 0);
+}
+
+.dark {
+  --primary-color: rgb(7, 7, 7);
+  --secondary-color: rgb(221, 221, 221);
+  --purple: var(--light-purple);
+  --card-border-box-shadow: var(--stack-logos-blue-glow);
+  --card-border-inset-box-shadow: var(--stack-logos-blue-glow-inset);
+  --generic-card-border-color: var(--light-blue);
+}

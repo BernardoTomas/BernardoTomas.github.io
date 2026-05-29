@@ -4,7 +4,7 @@ import { useContext } from "react";
 import TextCard from "../GenericCards/TextCard";
 import ImageCard from "../GenericCards/ImageCard";
 
-import pfp from "../../assets/portfolio-pfp-placeholder.jpg";
+import pfp from "../../assets/pfp-cut.jpeg";
 import "./AboutMe.css";
 // import Carousel from "../Carousel/Carousel";
 

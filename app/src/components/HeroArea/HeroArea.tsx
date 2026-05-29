@@ -4,6 +4,7 @@ import HeroImageCard from "./HeroImageCard/HeroImageCard";
 import HeroTextCard from "./HeroTextCard/HeroTextCard";
 
 import "./HeroArea.css";
+// import HeroOverlay from "./HeroOverlay/HeroOverlay";
 
 function HeroArea() {
   const { theme } = useContext(ThemeContext);
@@ -14,6 +15,12 @@ function HeroArea() {
         <HeroImageCard />
         <HeroTextCard />
       </div>
+      {/* <div className="hero-overlay">
+        <HeroOverlay smokeAnimation="smoke-animation" />
+        <HeroOverlay smokeAnimation="smoke-animation-offset-2s" />
+        <HeroOverlay smokeAnimation="smoke-animation-offset-4s" />
+        <HeroOverlay smokeAnimation="smoke-animation-offset-6s" />
+      </div> */}
     </div>
   );
 }
