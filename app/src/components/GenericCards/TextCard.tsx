@@ -28,7 +28,7 @@ function TextCard(props: TextCardProps) {
   return (
     <div className={cardStyle + " " + theme + " card-container"}>
       {title ? <h2>{title}</h2> : ""}
-      {title ? <h3>{subtitle}</h3> : ""}
+      {subtitle ? <h3>{subtitle}</h3> : ""}
       {pText ? <p>{pText}</p> : ""}
       {highlightedText ? <h4>{highlightedText}</h4> : ""}
       {pTextSecondPart ? <p>{pTextSecondPart}</p> : ""}

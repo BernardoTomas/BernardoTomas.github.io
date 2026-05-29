@@ -1,0 +1,20 @@
+.gallery-wrapper {
+  display: flex;
+  background-image: url("../../assets/duotone_polygon_bg_small.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-container {
+  display: flex;
+  padding: 80px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery-box {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
