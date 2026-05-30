@@ -7,10 +7,6 @@ button {
   --offwhite-purple: rgb(230, 214, 252);
   --hover-btn-color: white;
 
-  --btn-gradient-color-1: rgb(196, 207, 255);
-  --btn-gradient-color-2: rgb(52, 129, 192);
-  --btn-gradient-color-3: rgb(18, 81, 133);
-
   border: 1px solid var(--default-btn-color);
   color: var(--default-btn-color);
   border-radius: 8px;
@@ -73,6 +69,10 @@ button:focus-visible {
   --secondary-btn-color: var(--light-blue);
   --hover-btn-border-color: var(--offwhite-blue);
   --hover-btn-color: var(--offwhite-blue);
+
+  --btn-gradient-color-1: var(--btn-gradient-color-1-blue);
+  --btn-gradient-color-2: var(--btn-gradient-color-2-blue);
+  --btn-gradient-color-3: var(--btn-gradient-color-3-blue);
 }
 
 .btn-1-purple {
@@ -81,9 +81,9 @@ button:focus-visible {
   --hover-btn-border-color: var(--offwhite-purple);
   --hover-btn-color: var(--offwhite-purple);
 
-  --btn-gradient-color-1: rgb(227, 196, 255);
-  --btn-gradient-color-2: rgb(113, 52, 192);
-  --btn-gradient-color-3: rgb(58, 18, 133);
+  --btn-gradient-color-1: var(--btn-gradient-color-1-purple);
+  --btn-gradient-color-2: var(--btn-gradient-color-2-purple);
+  --btn-gradient-color-3: var(--btn-gradient-color-3-purple);
 }
 
 .btn-3 {

@@ -10,10 +10,10 @@ function GalleryCard() {
       <ImageCard
         imageUrl={bright_academy_thumb}
         imageAlt="Bright Academy Thumbnail"
-        imageStyle="gallery-image"
+        imageStyle="gallery-card-image"
       />
       <TextCard
-        cardStyle="gallery-card-text"
+        cardStyle="gallery-text-card"
         subtitle="Lorem Ipsum"
         pText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
