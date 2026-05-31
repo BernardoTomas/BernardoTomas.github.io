@@ -1,4 +1,14 @@
 .gallery-card {
+  --gallery-card-box-shadow-blue: 
+    16px 16px 50px rgba(29, 118, 190, 0.1),
+    8px 8px 25px rgba(100, 178, 241, 0.3),
+    2px 2px 15px rgba(198, 208, 253, 0.5);
+
+  --gallery-card-box-shadow-blue-hover: 
+    var(--shadow-1-x) var(--shadow-1-y) 80px rgba(29, 118, 190, 0.1),
+    var(--shadow-2-x) var(--shadow-2-y) 40px rgba(100, 178, 241, 0.3),
+    var(--shadow-3-x) var(--shadow-3-y) 20px rgba(198, 208, 253, 0.5);
+
   max-width: 300px;
   border-radius: 8px;
   overflow: hidden;
