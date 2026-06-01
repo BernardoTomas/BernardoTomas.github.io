@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context/toggle-theme";
 
 import "./Gallery.css";
 import GalleryCard from "../GenericCards/GalleryCard";
+import galleryData from "../../data/galleryData";
 
 function Gallery() {
   const { theme } = useContext(ThemeContext);
@@ -11,7 +12,9 @@ function Gallery() {
     <div className={theme + " gallery-wrapper"}>
       <div className="gallery-container">
         <div className="gallery-box">
-          <GalleryCard />
+          {galleryData.map((cardContent, index) => (
+            <GalleryCard key={index} {...cardContent} />
+          ))}
         </div>
       </div>
     </div>

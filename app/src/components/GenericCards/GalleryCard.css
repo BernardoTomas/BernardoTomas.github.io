@@ -12,11 +12,18 @@
   max-width: 300px;
   border-radius: 8px;
   overflow: hidden;
-  background-color: var(--primary-color);
+  background-color: var(--almost-black);
   box-shadow: var(--gallery-card-box-shadow-blue);
   transition-duration: 300ms;
 }
 
 .gallery-card:hover {
   box-shadow: var(--gallery-card-box-shadow-blue-hover);
+}
+
+.gallery-card-text-box {
+  display: flex;
+  padding: 16px;
+  padding-top: 8px;
+  gap: 8px;
 }

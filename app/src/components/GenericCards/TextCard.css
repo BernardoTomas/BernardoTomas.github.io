@@ -14,7 +14,5 @@
 } 
 
 .gallery-text-card {
-  padding: 16px;
-  padding-top: 8px;
-  color: var(--secondary-color);
+  color: white;
 }

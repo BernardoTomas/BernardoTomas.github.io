@@ -2,10 +2,30 @@ import { useRef } from "react";
 import "./GalleryCard.css";
 import ImageCard from "./ImageCard";
 import TextCard from "./TextCard";
+import Button from "../Buttons/Buttons";
+import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
-import bright_academy_thumb from "../../assets/bright_academy_thumb.jpg";
+type GalleryCardProps = {
+  imageURL: string;
+  imageAlt: string;
+  imageStyle: string;
+  cardStyle: string;
+  subtitle: string;
+  pText: string;
+  btnLink: string;
+  githubLink: boolean;
+};
 
-function GalleryCard() {
+function GalleryCard({
+  imageURL,
+  imageAlt,
+  imageStyle,
+  cardStyle,
+  subtitle,
+  pText,
+  btnLink,
+  githubLink,
+}: GalleryCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -38,15 +58,18 @@ function GalleryCard() {
   return (
     <div className="gallery-card" ref={cardRef} onMouseMove={handleMouseMove}>
       <ImageCard
-        imageUrl={bright_academy_thumb}
-        imageAlt="Bright Academy Thumbnail"
-        imageStyle="gallery-card-image"
+        imageUrl={imageURL}
+        imageAlt={imageAlt}
+        imageStyle={imageStyle}
       />
-      <TextCard
-        cardStyle="gallery-text-card"
-        subtitle="Lorem Ipsum"
-        pText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      />
+      <div className="gallery-card-text-box">
+        <TextCard cardStyle={cardStyle} subtitle={subtitle} pText={pText} />
+        <Button
+          btnLink={btnLink}
+          btnContent={githubLink ? FaGithub : FaExternalLinkSquareAlt}
+          btnStyle={githubLink ? "btn-1-purple" : "btn-1-blue"}
+        />
+      </div>
     </div>
   );
 }
