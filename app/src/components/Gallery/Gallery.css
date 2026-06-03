@@ -8,10 +8,18 @@
 
 .gallery-container {
   display: flex;
-  padding: 80px;
+  padding: 80px 40px;
   margin: 0 auto;
   max-width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.gallery-title {
+  align-self: flex-end;
+  color: var(--light-blue);
+} 
 
 .gallery-box {
   display: flex;

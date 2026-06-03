@@ -33,6 +33,18 @@
     rgba(1, 7, 34, 0) 100%
   );
 
+    --gallery-card-separator-blue-gradient: linear-gradient(
+    90deg,
+    rgba(1, 7, 34, 0) 0%,
+    rgba(29, 118, 190, 0.5) 5%,
+    rgba(100, 178, 241, 0.8) 10%,
+    rgb(169, 184, 250) 25%,
+    rgba(100, 178, 241, 0.8) 50%,
+    rgba(29, 118, 190, 0.5) 70%,
+    rgba(1, 7, 34, 0) 100%
+  );
+
+
   --stack-logos-blue-glow: 
     0px 0px 35px rgba(29, 118, 190, 0.1),
     0px 0px 15px rgba(100, 178, 241, 0.3),

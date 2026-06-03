@@ -3,7 +3,7 @@ import "./GalleryCard.css";
 import ImageCard from "./ImageCard";
 import TextCard from "./TextCard";
 import Button from "../Buttons/Buttons";
-import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 type GalleryCardProps = {
   imageURL: string;
@@ -66,8 +66,10 @@ function GalleryCard({
         <TextCard cardStyle={cardStyle} subtitle={subtitle} pText={pText} />
         <Button
           btnLink={btnLink}
-          btnContent={githubLink ? FaGithub : FaExternalLinkSquareAlt}
-          btnStyle={githubLink ? "btn-1-purple" : "btn-1-blue"}
+          btnContent={githubLink ? FaGithub : FaLink}
+          btnStyle={
+            (githubLink ? "btn-1-purple" : "btn-1-blue") + " gallery-card-btn"
+          }
         />
       </div>
     </div>

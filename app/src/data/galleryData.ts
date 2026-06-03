@@ -2,6 +2,8 @@ import allbright_thumb from "../assets/Allbright_thumb.jpg";
 import trybewallet_thumb from "../assets/Trybe_Wallet_thumb.jpg";
 import desentopex_thumb from "../assets/Desentopex_thumb.jpg";
 import trybe_fc_thumb from "../assets/Trybe_FC_thumb.jpg";
+import casa_de_cambio_thumb from "../assets/Casa_de_Cambio_thumb.jpg";
+import dallaqua_thumb from "../assets/Dallaqua_thumb.jpg";
 
 const cardContentList = [
   {
@@ -40,9 +42,29 @@ const cardContentList = [
     imageStyle: "gallery-image",
     cardStyle: "gallery-text-card",
     subtitle: "Trybe FC",
-    pText: "A football club website built with React and TypeScript, with a backend and DB written in Node.js.",
+    pText: "A football tournament website built with React, with a backend and DB written in Node.js and MySQL.",
     btnLink: "https://github.com/BernardoTomas/Football_championship_manager",
     githubLink: true,
+  },
+  {
+    imageURL: casa_de_cambio_thumb,
+    imageAlt: "Casa de Cambio",
+    imageStyle: "gallery-image",
+    cardStyle: "gallery-text-card",
+    subtitle: "Casa de Cambio",
+    pText: "A website for a currency exchange project, built with HTML, CSS, and vanilla JavaScript.",
+    btnLink: "https://physical-family.surge.sh",
+    githubLink: false,
+  },
+  {
+    imageURL: dallaqua_thumb,
+    imageAlt: "Dallaqua",
+    imageStyle: "gallery-image",
+    cardStyle: "gallery-text-card",
+    subtitle: "Dallaqua",
+    pText: "A website for an air conditioning repair company, built with WordPress, Elementor, CSS, and JavaScript.",
+    btnLink: "https://dallaquaarcondicionado.com/",
+    githubLink: false,
   },
 ];
 
