@@ -9,6 +9,7 @@ type TextCardProps = {
   pText?: string;
   highlightedText?: string;
   pTextSecondPart?: string;
+  footnote?: string;
   cardStyle: string;
   buttonContent?: string;
   buttonStyle?: string;
@@ -22,6 +23,7 @@ function TextCard(props: TextCardProps) {
     highlightedText,
     pText,
     pTextSecondPart,
+    footnote,
     cardStyle,
   } = props;
 
@@ -32,6 +34,7 @@ function TextCard(props: TextCardProps) {
       {pText ? <p>{pText}</p> : ""}
       {highlightedText ? <h4>{highlightedText}</h4> : ""}
       {pTextSecondPart ? <p>{pTextSecondPart}</p> : ""}
+      {footnote ? <h6>{footnote}</h6> : ""}
     </div>
   );
 }

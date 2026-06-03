@@ -6,6 +6,7 @@
   --mid-purple: rgb(113, 39, 182);
   --light-blue: rgb(151, 170, 255);
   --mid-blue: rgb(89, 118, 250);
+  --dark-blue: rgb(34, 65, 204);
   --mid-yellow: rgb(255, 255, 99);
 
   --almost-black: rgb(12, 12, 12);
@@ -34,6 +35,17 @@
   );
 
     --gallery-card-separator-blue-gradient: linear-gradient(
+    90deg,
+    rgba(1, 7, 34, 0) 0%,
+    rgba(113, 39, 182, 0.5) 35%,
+    rgba(163, 93, 228, 0.8) 70%,
+    rgb(204, 169, 250) 85%,
+    rgba(163, 93, 228, 0.8) 90%,
+    rgba(113, 39, 182, 0.5) 95%,
+    rgba(1, 7, 34, 0) 100%
+  );
+
+  --section-title-separator-purple-gradient: linear-gradient(
     90deg,
     rgba(1, 7, 34, 0) 0%,
     rgba(29, 118, 190, 0.5) 5%,
