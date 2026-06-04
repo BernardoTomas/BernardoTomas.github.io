@@ -9,7 +9,7 @@ function Gallery() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={theme + " gallery-wrapper"}>
+    <div id="projects" className={theme + " gallery-wrapper"}>
       <div className="gallery-container">
         <h2 className="gallery-title">My Projects</h2>
         <div className="gallery-title-separator" />

@@ -10,7 +10,7 @@ function HeroArea() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={theme + " hero-container"}>
+    <div id="home" className={theme + " hero-container"}>
       <div className="hero-content">
         <HeroImageCard />
         <HeroTextCard />
