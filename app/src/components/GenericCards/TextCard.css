@@ -31,10 +31,14 @@
   padding-top: 8px;
 }
 
+.gallery-text-card p {
+  font-size: 0.9rem;
+}
+
 .gallery-text-card p::before {
   content: "";
   display: inline-block;
   width: 100%;
   height: 1px;
-  background: var(--gallery-card-separator-blue-gradient);
+  background: var(--separator-blue-gradient);
 }
