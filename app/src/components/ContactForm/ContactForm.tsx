@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ContactForm.css";
+import Input from "./InputComponent/Input";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -23,32 +24,27 @@ function ContactForm() {
   return (
     <div className="contact-form-container">
       <form className="contact-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          onChange={handleChange}
+        <Input
           type="text"
           id="name"
           placeholder="Your Name"
-          required
+          label="Name"
+          changeHandler={handleChange}
         />
-        <br />
-        <label htmlFor="email">Email:</label>
-        <input
-          onChange={handleChange}
+        <Input
           type="email"
           id="email"
           placeholder="Your Email"
-          required
+          label="Email"
+          changeHandler={handleChange}
         />
-        <br />
-        <label htmlFor="message">Message:</label>
-        <textarea
-          onChange={handleChange}
+        <Input
+          type="textarea"
           id="message"
           placeholder="Your Message"
-          required
+          label="Message"
+          changeHandler={handleChange}
         />
-        <br />
         <button type="submit">Send Message</button>
       </form>
     </div>

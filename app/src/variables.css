@@ -12,7 +12,7 @@
   --almost-black: rgb(12, 12, 12);
   --dark-gray: rgb(27, 27, 27);
   --mid-gray: rgb(51, 51, 51);
-  --mid-gray-semi-transparent: rgba(163, 163, 163, 0.1);
+  --mid-gray-semi-transparent: rgba(163, 163, 163, 0.9);
 
   --btn-gradient-color-1-purple: rgb(227, 196, 255);
   --btn-gradient-color-2-purple: rgb(113, 52, 192);
@@ -25,6 +25,10 @@
   --generic-box-shadow: 
     2px 2px 15px rgba(0, 0, 0, 0.1),
     2px 2px 8px rgba(0, 0, 0, 0.3);
+  
+  --box-shadow-test:
+    2px 2px 15px rgba(0, 0, 0, 0.5),
+    2px 2px 8px rgba(0, 0, 0, 0.8);
 
   --blue-logos-gradient: linear-gradient(
     90deg,
@@ -35,6 +39,17 @@
     rgba(100, 178, 241, 0.8) 80%,
     rgba(29, 118, 190, 0.5) 90%,
     rgba(1, 7, 34, 0) 100%
+  );
+
+  --contact-form-border-gradient: linear-gradient(
+    120deg,
+    rgba(71, 98, 221, 0.3) 0%,
+    rgba(29, 118, 190, 0.5) 15%,
+    rgba(100, 178, 241, 0.8) 30%,
+    rgb(169, 184, 250) 70%,
+    rgba(100, 178, 241, 0.8) 80%,
+    rgba(29, 118, 190, 0.5) 90%,
+    rgba(71, 98, 221, 0.4) 100%
   );
 
   --separator-purple-gradient: linear-gradient(

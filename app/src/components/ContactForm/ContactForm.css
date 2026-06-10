@@ -1,10 +1,18 @@
 .contact-form-container {
-  background-color: var(--primary-color);
-  border: 4px solid var(--dark-gray);
+  background: var(--contact-form-border-gradient);
   border-radius: 8px;
+  box-shadow: var(--generic-box-shadow);
   display: flex;
   flex-direction: column;
-  gap: 24px; 
+  padding: 1px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  color: var(--secondary-color);
+  gap: 8px; 
   padding: 40px;
-  outline: 2px solid var(--mid-gray-semi-transparent);
 }
