@@ -27,21 +27,18 @@ function ContactForm() {
         <Input
           type="text"
           id="name"
-          placeholder="Your Name"
           label="Name"
           changeHandler={handleChange}
         />
         <Input
           type="email"
           id="email"
-          placeholder="Your Email"
           label="Email"
           changeHandler={handleChange}
         />
         <Input
           type="textarea"
           id="message"
-          placeholder="Your Message"
           label="Message"
           changeHandler={handleChange}
         />

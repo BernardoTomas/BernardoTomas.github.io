@@ -1,3 +1,82 @@
-  .input-container textarea {
-    resize: none;
-  }
+.input-container label{
+  display: flex;
+  flex-direction: column;
+  color: var(--blue);
+}
+
+.input-border {
+  border-radius: 29px;
+  display: flex;
+  height: fit-content;
+  padding: 1px;
+  position: relative;
+}
+
+.input-border::before,
+.input-border::after {
+  border-radius: inherit;
+  content: '';
+  inset: 0;
+  position: absolute;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.input-border::before {
+  background: var(--contact-form-border-gradient);
+  opacity: 1;
+}
+
+.input-border::after {
+  background: var(--contact-form-border-gradient-2);
+  opacity: 0;
+}
+
+.input-border:focus-within::before {
+  opacity: 0;
+}
+
+.input-border:focus-within::after {
+  opacity: 1;
+}
+  
+.input-container input, .input-container textarea {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  border-radius: 28px;
+  color: var(--secondary-color);
+  font-size: 16px;
+  min-width: 240px;
+  padding: 16px;
+  width: 100%;
+  z-index: 2;
+}
+
+.input-container input::placeholder, .input-container textarea::placeholder {
+  color: var(--mid-gray-semi-transparent);
+}
+
+.input-container label span {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  margin-left: 10%;
+  margin-bottom: -12px;
+  padding: 0 6px;
+  transition: margin-left 0.3s ease;
+  width: fit-content;
+  z-index: 10;
+}
+
+.input-container label:focus-within span {
+  margin-left: 60%;
+}
+
+.input-container input:focus, .input-container textarea:focus {
+  outline: none;
+}
+
+.input-container textarea {
+  min-height: 120px;
+  resize: none;
+  margin: 0;
+}
