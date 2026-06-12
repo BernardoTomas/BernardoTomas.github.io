@@ -13,7 +13,6 @@
   box-shadow: var(--card-border-box-shadow);
 }
 
-.gallery-card-image {
-  height: 142px;
-  width: 300px; 
+.gallery-image {
+  width: 100%;
 }

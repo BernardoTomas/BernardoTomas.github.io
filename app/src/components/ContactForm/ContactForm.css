@@ -5,13 +5,29 @@
   display: flex;
   flex-direction: column;
   padding: 1px;
+  width: 50%;
+  min-width: 280px;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
   background-color: var(--primary-color);
   border-radius: 7px;
-  gap: 8px; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 40px;
+}
+
+/* ------------------------ Contact form media queries -------------------------- */
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact-form {
+    padding: 24px;
+  }
 }

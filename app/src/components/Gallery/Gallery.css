@@ -35,3 +35,11 @@
   flex-wrap: wrap;
   gap: 64px;
 }
+
+/* -------------------------- Gallery media queries ------------------------------ */
+
+@media (max-width: 440px) {
+  .gallery-container {
+    padding: 120px 20px;
+  }
+}

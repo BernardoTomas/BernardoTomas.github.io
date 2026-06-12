@@ -36,4 +36,15 @@
     text-align: center;
   }
 }
-  
+
+/* -------------------------- About me media queries ------------------------------ */
+
+@media (max-width: 440px) {
+  .about-me-container {
+    padding: 120px 20px;
+  }
+
+  .about-me-box {
+    padding: 40px 20px;
+  }
+}
