@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ContactForm.css";
 import Input from "./InputComponent/Input";
+import Button from "../Buttons/Buttons";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -42,7 +43,12 @@ function ContactForm() {
           label="Message"
           changeHandler={handleChange}
         />
-        <button type="submit">Send Message</button>
+        <Button
+          btnLink="#"
+          btnContent="Send"
+          btnStyle="contact-form-btn"
+          btntype="submit"
+        />
       </form>
     </div>
   );

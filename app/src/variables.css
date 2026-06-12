@@ -63,6 +63,29 @@
     rgba(71, 98, 221, 0.4) 100%
   );
 
+  --contact-form-border-gradient-3: linear-gradient(
+    120deg,
+    rgba(1, 7, 34, 0.3) 0%,
+    rgba(113, 39, 182, 0.5) 15%,
+    rgba(163, 93, 228, 0.8) 30%,
+    rgb(204, 169, 250) 70%,
+    rgba(163, 93, 228, 0.8) 80%,
+    rgba(113, 39, 182, 0.5) 90%,
+    rgba(1, 7, 34, 0.4) 100%
+  );
+
+  --contact-form-border-gradient-4: linear-gradient(
+    40deg,
+    rgba(1, 7, 34, 0.3) 0%,
+    rgba(113, 39, 182, 0.5) 15%,
+    rgba(163, 93, 228, 0.8) 30%,
+    rgb(204, 169, 250) 70%,
+    rgba(163, 93, 228, 0.8) 80%,
+    rgba(113, 39, 182, 0.5) 90%,
+    rgba(1, 7, 34, 0.4) 100%
+  );
+
+
   --separator-purple-gradient: linear-gradient(
     90deg,
     rgba(1, 7, 34, 0) 0%,

@@ -8,18 +8,19 @@ function Button(props: {
   btnLink: string;
   btnContent: string | IconType;
   btnStyle: string;
+  btntype?: "button" | "submit" | "reset";
 }) {
-  const { btnContent, btnStyle, btnLink } = props;
+  const { btnContent, btnStyle, btnLink, btntype } = props;
   const { theme } = useContext(ThemeContext);
 
   return (
     <a href={btnLink} target="_blank">
       {typeof btnContent === "string" ? (
-        <button className={btnStyle + " " + theme}>
+        <button className={btnStyle + " " + theme} type={btntype}>
           <h4>{btnContent}</h4>
         </button>
       ) : (
-        <button className={btnStyle + " icon-btn " + theme}>
+        <button className={btnStyle + " icon-btn " + theme} type={btntype}>
           {React.createElement(btnContent)}
         </button>
       )}

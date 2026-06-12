@@ -112,6 +112,15 @@ button:focus-visible {
   margin: auto;
 }
 
+.contact-form-btn {
+  background-color: var(--primary-color);
+  border: 1px solid var(--purple);
+  border-radius: 50px;
+  color: var(--purple);
+  margin-top: 8px;
+  width: 100%;
+}
+
 button>h4 {
   font-weight: 500;
   margin: 0;
