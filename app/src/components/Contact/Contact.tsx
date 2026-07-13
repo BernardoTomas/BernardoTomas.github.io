@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div id="contact" className={theme + " contact-wrapper"}>
       <div className="contact-container">
-        <h2 className="gallery-title">Contact me</h2>
+        <h2 className="gallery-title title-right">Contact me</h2>
         <div className="gallery-title-separator" />
         <div className="contact-box-bg">
           <div className="contact-box">
