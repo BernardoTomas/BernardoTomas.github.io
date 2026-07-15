@@ -1,0 +1,19 @@
+.gallery-stack-card {
+  border-radius: 10px;
+  padding: 1px;
+  background: var(--contact-form-border-gradient);
+}
+
+.gallery-stack-content {
+  align-items: center;
+  background: var(--almost-black);
+  border-radius: 8px;
+  color: var(--btn-gradient-color-1-blue);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.gallery-stack-content img {
+  width: 40px;
+}

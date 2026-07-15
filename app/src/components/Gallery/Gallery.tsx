@@ -5,6 +5,9 @@ import "./Gallery.css";
 import GalleryCard from "../GenericCards/GalleryCard";
 import galleryData from "../../data/galleryData";
 
+import tempStackImg from "../../assets/css.png";
+import StackCard from "../GenericCards/StackCard";
+
 function Gallery() {
   const { theme } = useContext(ThemeContext);
 
@@ -20,7 +23,9 @@ function Gallery() {
         </div>
         <h2 className="gallery-title title-left">My Stacks</h2>
         <div className="gallery-title-separator gallery-separator-left" />
-        <div className="gallery-box"></div>
+        <div className="gallery-box">
+          <StackCard imgSrc={tempStackImg} title="CSS" />
+        </div>
       </div>
     </div>
   );
