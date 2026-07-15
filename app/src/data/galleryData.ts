@@ -1,9 +1,9 @@
-import allbright_thumb from "../assets/Allbright_thumb.jpg";
-import trybewallet_thumb from "../assets/Trybe_Wallet_thumb.jpg";
-import desentopex_thumb from "../assets/Desentopex_thumb.jpg";
-import trybe_fc_thumb from "../assets/Trybe_FC_thumb.jpg";
-import casa_de_cambio_thumb from "../assets/Casa_de_Cambio_thumb.jpg";
-import dallaqua_thumb from "../assets/Dallaqua_thumb.jpg";
+import allbright_thumb from "../assets/Thumbnails/Allbright_thumb.jpg";
+import trybewallet_thumb from "../assets/Thumbnails/Trybe_Wallet_thumb.jpg";
+import desentopex_thumb from "../assets/Thumbnails/Desentopex_thumb.jpg";
+import trybe_fc_thumb from "../assets/Thumbnails/Trybe_FC_thumb.jpg";
+import casa_de_cambio_thumb from "../assets/Thumbnails/Casa_de_Cambio_thumb.jpg";
+import dallaqua_thumb from "../assets/Thumbnails/Dallaqua_thumb.jpg";
 
 const cardContentList = [
   {

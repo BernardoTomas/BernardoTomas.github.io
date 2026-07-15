@@ -4,18 +4,18 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import StacksLine from "./StacksLine";
 import Button from "../../Buttons/Buttons";
 
-import react_logo from "../../../assets/react.png";
-import docker_logo from "../../../assets/docker.png";
-import node_logo from "../../../assets/node-js.png";
-import git_logo from "../../../assets/git.png";
-import html_logo from "../../../assets/html.png";
-import css_logo from "../../../assets/css.png";
-import javascript_logo from "../../../assets/javascript.png";
-import typescript_logo from "../../../assets/typescript.png";
-import jest_logo from "../../../assets/jest.png";
-import sql_logo from "../../../assets/sql.png";
-import python_logo from "../../../assets/python.png";
-import wordpress_logo from "../../../assets/wordpress.png";
+import react_logo from "../../../assets/Icons/react.png";
+import docker_logo from "../../../assets/Icons/docker.png";
+import node_logo from "../../../assets/Icons/node-js.png";
+import git_logo from "../../../assets/Icons/git.png";
+import html_logo from "../../../assets/Icons/html.png";
+import css_logo from "../../../assets/Icons/css.png";
+import javascript_logo from "../../../assets/Icons/javascript.png";
+import typescript_logo from "../../../assets/Icons/typescript.png";
+import jest_logo from "../../../assets/Icons/jest.png";
+import sql_logo from "../../../assets/Icons/sql.png";
+import python_logo from "../../../assets/Icons/python.png";
+import wordpress_logo from "../../../assets/Icons/wordpress.png";
 
 import "./HeroTextCard.css";
 

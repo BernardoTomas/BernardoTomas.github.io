@@ -5,7 +5,7 @@ import "./Gallery.css";
 import GalleryCard from "../GenericCards/GalleryCard";
 import galleryData from "../../data/galleryData";
 
-import tempStackImg from "../../assets/css.png";
+import tempStackImg from "../../assets/Icons/css.png";
 import StackCard from "../GenericCards/StackCard";
 
 function Gallery() {
