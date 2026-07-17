@@ -1,0 +1,149 @@
+button {
+  --default-btn-color: white;
+  --default-btn-bg-color: var(--almost-black);
+  --secondary-btn-color: gray;
+  --hover-btn-border-color: white;
+  --offwhite-blue: rgb(216, 224, 255);
+  --offwhite-purple: rgb(230, 214, 252);
+  --hover-btn-color: white;
+
+  border: 1px solid var(--default-btn-color);
+  color: var(--default-btn-color);
+  border-radius: 8px;
+  padding: 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+button.btn-1-purple,
+button.btn-1-blue {
+  background-size: 280% 100%;
+  background-position: left;
+  background-image: 
+    linear-gradient(
+      to right,
+      var(--default-btn-bg-color) 50%, 
+      var(--btn-gradient-color-3) 54%,
+      var(--btn-gradient-color-2) 56%,
+      var(--btn-gradient-color-1) 56.75%,
+      white 57%,
+      var(--btn-gradient-color-1) 57.25%,
+      var(--btn-gradient-color-2) 58%,
+      var(--btn-gradient-color-3) 60%,
+      var(--default-btn-bg-color) 64%
+    );
+  box-shadow: 1px 1px 45px rgba(0, 0, 0, 0.5);
+}
+
+button.btn-1-purple:hover,
+button.btn-1-blue:hover {
+  color: var(--hover-btn-color);
+  border-color: var(--hover-btn-border-color) !important;
+  background-position: right;
+  box-shadow: 
+    0 0 15px var(--btn-gradient-color-3),
+    inset 0 0 15px var(--btn-gradient-color-3),
+    0 0 7px var(--btn-gradient-color-2),
+    inset 0 0 7px var(--btn-gradient-color-2),
+    0 0 4px var(--btn-gradient-color-1),
+    inset 0 0 4px var(--btn-gradient-color-1);
+}
+
+button.btn-1-blue:hover>*, 
+button.btn-1-purple:hover>* {
+  filter:
+    drop-shadow(0 0 2px var(--btn-gradient-color-1))
+    drop-shadow(0 0 1px var(--btn-gradient-color-2));
+}
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+.btn-1-blue {
+  --default-btn-color: var(--mid-blue);
+  --secondary-btn-color: var(--light-blue);
+  --hover-btn-border-color: var(--offwhite-blue);
+  --hover-btn-color: var(--offwhite-blue);
+
+  --btn-gradient-color-1: var(--btn-gradient-color-1-blue);
+  --btn-gradient-color-2: var(--btn-gradient-color-2-blue);
+  --btn-gradient-color-3: var(--btn-gradient-color-3-blue);
+}
+
+.btn-1-purple {
+  --default-btn-color: var(--light-purple);
+  --secondary-btn-color: var(--light-purple);
+  --hover-btn-border-color: var(--offwhite-purple);
+  --hover-btn-color: var(--offwhite-purple);
+
+  --btn-gradient-color-1: var(--btn-gradient-color-1-purple);
+  --btn-gradient-color-2: var(--btn-gradient-color-2-purple);
+  --btn-gradient-color-3: var(--btn-gradient-color-3-purple);
+}
+
+.btn-3 {
+  --default-btn-color: var(--mid-yellow);
+  --secondary-btn-color: var(--yellow);
+  --hover-btn-border-color: var(--yellow);
+
+  border: 1px solid var(--mid-yellow);
+  color: var(--mid-yellow);
+}
+
+.icon-btn>svg {
+  font-size: 32px;
+  display: block;
+}
+
+.gallery-card-btn {
+  border-radius: 500px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.gallery-card-btn>svg {
+  font-size: 24px;
+  margin: auto;
+}
+
+.contact-form-btn {
+  background-color: var(--primary-color);
+  border: 1px solid var(--purple);
+  border-radius: 50px;
+  color: var(--purple);
+  margin-top: 8px;
+  width: 100%;
+}
+
+button>h4 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0.4em 2.5em;
+}
+
+/* -------------------------Toggle buttons------------------------- */
+
+.nav-toggle-btn {
+  line-height: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.theme-btn {
+  transition: background-color 300ms ease, color 300ms ease;
+  border-radius: 50px;
+  border: 1px solid var(--secondary-color);
+}
+
+.hamburger-menu-btn-style {
+  transition: background-color 0ms ease, color 0ms ease;
+  border: none;
+}

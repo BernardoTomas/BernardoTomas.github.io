@@ -1,0 +1,50 @@
+.about-me-wrapper {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.about-me-container {
+  align-items: center;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.about-me-box {
+  align-items: center;
+  border: 1px solid var(--generic-card-border-color);
+  border-radius: 8px;
+  box-shadow: var(--card-border-box-shadow), var(--card-border-inset-box-shadow);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+}
+
+.about-me-text-card-box {
+  display: flex;
+}
+
+@media (max-width: 904px) {
+  .about-me-box {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .about-me-text-card-box {
+    text-align: center;
+  }
+}
+
+/* -------------------------- About me media queries ------------------------------ */
+
+@media (max-width: 440px) {
+  .about-me-container {
+    padding: 120px 20px;
+  }
+
+  .about-me-box {
+    padding: 40px 20px;
+  }
+}

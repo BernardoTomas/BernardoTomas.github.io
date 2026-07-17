@@ -1,0 +1,18 @@
+.carousel-image {
+  transition-duration: 500ms;
+}
+
+.image-container p {
+  color: white;
+}
+
+.profile-image {
+  width: 240px;
+  border: 1px solid var(--generic-card-border-color);
+  border-radius: 4px;
+  box-shadow: var(--card-border-box-shadow);
+}
+
+.gallery-image {
+  width: 100%;
+}

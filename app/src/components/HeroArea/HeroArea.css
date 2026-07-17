@@ -1,0 +1,24 @@
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../../assets/Backgrounds/duotone_polygon_bg_small.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+  z-index: 10;
+  max-width: 100vw;
+}
+
+.hero-overlay {
+  position: absolute;
+  z-index: 100;
+  left: -320px;
+  top: 320px;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: screen;
+}

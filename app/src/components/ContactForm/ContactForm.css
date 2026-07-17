@@ -1,0 +1,33 @@
+.contact-form-container {
+  background: var(--contact-form-border-gradient);
+  border-radius: 8px;
+  box-shadow: var(--generic-box-shadow);
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  width: 50%;
+  min-width: 280px;
+}
+
+.contact-form {
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 40px;
+}
+
+/* ------------------------ Contact form media queries -------------------------- */
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact-form {
+    padding: 24px;
+  }
+}
