@@ -11,9 +11,9 @@
   color: var(--btn-gradient-color-1-blue);
   display: flex;
   gap: 16px;
-  padding: 16px;
+  padding: 12px;
 }
 
 .gallery-stack-content img {
-  width: 40px;
+  width: 32px;
 }

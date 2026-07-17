@@ -52,6 +52,20 @@
   margin: 80px auto;
 }
 
+.gallery-box.stacks-gallery-box {
+  justify-content: flex-start;
+  gap: 24px;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.gallery-subtitle {
+  align-self: start;
+  color: var(--light-blue);
+  font-weight: 300;
+  margin-top: 32px;
+}  
+
 /* -------------------------- Gallery media queries ------------------------------ */
 
 @media (max-width: 440px) {
